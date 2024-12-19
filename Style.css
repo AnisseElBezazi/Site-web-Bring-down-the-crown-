@@ -1,0 +1,220 @@
+body{
+    background-color: rgb(181 181 181 / 73%);
+    color: purple;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(17, 17, 17);
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    zoom: 0.67; /* obliger de faire un zoom pour remettre a echelle mon site car je l'ai concu avec le zoom de ma page web a 67%*/
+    box-sizing: border-box;
+}
+.page 
+.top{
+    margin-left: 6%;
+    width: 100%;
+    height: 127px;
+    display: flex;
+    position: relative;
+    top: 100px;
+    align-items: center;
+   
+}
+
+.logo img{
+    width: 25%;
+    border-radius: 1000px;
+}
+footer{
+    
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(65, 72, 97);
+    
+}
+.contenu-footer{
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.gauche-footer{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.droite-footer{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 350%;
+    gap: 25px;
+}
+
+.contenu-footer img{
+    width: 100px;
+    border-radius: 1000px;
+}
+
+.texte_bouton{
+    display: flex;
+     gap: 23%;
+     margin-left: 50%;
+     font-size: 20px;
+     font-size: 20px;
+     align-items: center;
+     transform: scale(1.3);
+}
+
+.Bouton{
+    background-color: rgb(120, 44, 192);
+    border-radius: 24px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    padding: 0px 40px;
+}
+.Bouton1{
+    background-color: rgb(120, 44, 192);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px 100px;
+}
+.ligne-bouton{
+    margin-left: 6%;
+    margin-top: 5%;
+    display: flex;
+    gap: 100px;
+}
+
+h1 {
+    font-size: 100px ;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-clip: text;
+}
+h2{
+    position: relative;
+    font-size: 20px ;
+    color: rgb(255, 255, 255);
+    margin: 8px;
+    right: 4px;
+}
+h5{
+    position: relative;
+    font-size: 40px ;
+    color: rgb(255, 255, 255);
+    margin: 8px;
+    right: 4px;
+}
+
+h4 {
+    font-size: 30px ;
+    color: rgb(255, 255, 255);
+}
+
+.span{
+    font-size: 150px;
+    display: inline-block;
+    background: linear-gradient(to left,rgb(17, 17, 236),rgb(223, 13, 13));
+    background-clip: text;
+    color: transparent;
+}
+
+h6{
+    font-size: 30px;
+    color: rgb(179, 171, 171);
+}
+p{
+    font-size: 50px ;
+    color: rgb(255, 255, 255);
+}
+
+
+.mid{ 
+    margin-left: 6%;
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 24px;
+    flex-direction: column;
+}
+.contenu2{
+    display: flex;  
+    margin-top: 8%;
+    margin-left :6%; ;
+    margin-right :6%; ;
+  }
+
+.contenu4{
+    display: flex;  
+    margin-top: 8%;
+    margin-left :6%; ;
+    margin-right :6%; ;
+ }
+ .tab{
+    display: flex;  
+    margin-top: 0%;
+    margin-left :0%; ;
+    margin-right :0%; ;
+ }
+.Lien{
+    position: absolute;
+    left: 46%;
+    bottom: 37%;
+}
+
+.contenu{
+    display: none;
+}
+
+.contenu-active{
+display: block;
+}
+
+.Bouton-active{
+transform: scale(1.3);
+}
+
+.tab:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.texte{
+    display: flex;
+    align-items: center;
+    gap: 113px;
+}
+
+.videoTeaser{
+    border-radius: 25px;
+}
+
+.gauche-texte{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo:hover{
+    transform: scale(1);
+}
+
+.Bouton-disapear{
+  display: none;  
+}
