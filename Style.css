@@ -218,3 +218,10 @@ transform: scale(1.3);
 .Bouton-disapear{
   display: none;  
 }
+
+
+@media screen and(max-width:1300px){
+    body{
+        zoom: 0.33;
+    }
+}
