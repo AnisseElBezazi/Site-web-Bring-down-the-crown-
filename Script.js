@@ -8,8 +8,10 @@ let variableGameplay=document.querySelector(".tab3")
 let Gameplay=document.querySelectorAll(".contenu4");
 let BoutonCommunication=document.querySelector(".tab4");
 let BoutonMarketing=document.querySelector(".tab5");
+let VariableElements=document.querySelector(".tab2");
+let Elements=document.querySelector(".contenu3");
 
-
+//page principal
 logoboutton.addEventListener("click",function(){
     tabs.forEach(function(tab){
         tab.classList.remove("Bouton-active");
@@ -22,7 +24,7 @@ logoboutton.addEventListener("click",function(){
     BoutonMarketing.classList.remove("Bouton-disapear");
 });
 
-
+//page Teaser
 variableTeaser.addEventListener("click",function(){
     tabs.forEach(function(tab){
         tab.classList.remove("Bouton-active");
@@ -37,7 +39,7 @@ variableTeaser.addEventListener("click",function(){
     BoutonMarketing.classList.remove("Bouton-disapear");
 });
 
-
+//page Gameplay
 variableGameplay.addEventListener("click",function(){
     tabs.forEach(function(tab){
         tab.classList.remove("Bouton-active");
@@ -51,4 +53,22 @@ variableGameplay.addEventListener("click",function(){
     })
     BoutonCommunication.classList.add("Bouton-disapear");
     BoutonMarketing.classList.add("Bouton-disapear");
+});
+
+
+
+//page Elements 
+
+VariableElements.addEventListener("click",function(){
+    tabs.forEach(function(tab){
+        tab.classList.remove("Bouton-active");
+    });
+    VariableElements.classList.add("Bouton-active");
+
+    ContenuListe.forEach(function(contenu){
+        contenu.classList.remove("contenu-active");
+    });
+    Elements.classList.add("contenu-active");
+    BoutonCommunication.classList.remove("Bouton-disapear");
+    BoutonMarketing.classList.remove("Bouton-disapear");
 });
