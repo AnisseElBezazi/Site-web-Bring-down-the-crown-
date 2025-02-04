@@ -42,11 +42,11 @@ variableTeaser.addEventListener("click",function(){
 });
 
 //page Gameplay
-variableGameplay.addEventListener("click",function(){
+BoutonMarketing.addEventListener("click",function(){
     tabs.forEach(function(tab){
         tab.classList.remove("Bouton-active");
     });
-    variableGameplay.classList.add("Bouton-active");
+    BoutonMarketing.classList.add("Bouton-active");
     ContenuListe.forEach(function(contenu){
         contenu.classList.remove("contenu-active");
     });
