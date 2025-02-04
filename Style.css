@@ -200,6 +200,12 @@ p{
     margin-right :6%; ;
  }
 
+ .contenu6{
+    display: flex;  
+    margin-top: 8%;
+    margin-left :6%; ;
+    margin-right :6%; ;
+ }
 
  .tab{
     display: flex;  

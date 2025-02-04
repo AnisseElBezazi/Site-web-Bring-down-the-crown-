@@ -12,7 +12,8 @@ let VariableElements=document.querySelector(".tab2");
 let Elements=document.querySelector(".contenu3");
 let BoutonDonation=document.querySelector(".tab6");
 let donnation=document.querySelector(".contenu5");
-
+let BoutonDon2=document.querySelector(".Lien");
+let Communication=document.querySelector(".contenu6");
 //page principal
 logoboutton.addEventListener("click",function(){
     tabs.forEach(function(tab){
@@ -41,7 +42,7 @@ variableTeaser.addEventListener("click",function(){
     BoutonMarketing.classList.remove("Bouton-disapear");
 });
 
-//page Gameplay
+//page Marketing
 BoutonMarketing.addEventListener("click",function(){
     tabs.forEach(function(tab){
         tab.classList.remove("Bouton-active");
@@ -56,6 +57,22 @@ BoutonMarketing.addEventListener("click",function(){
     BoutonCommunication.classList.add("Bouton-disapear");
     BoutonMarketing.classList.add("Bouton-disapear");
 });
+
+
+BoutonCommunication.addEventListener("click",function(){
+    tabs.forEach(function(tab){
+        tab.classList.remove("Bouton-active");
+    });
+    BoutonCommunication.classList.add("Bouton-active");
+
+    ContenuListe.forEach(function(contenu){
+        contenu.classList.remove("contenu-active");
+    });
+    Communication.classList.add("contenu-active");
+    BoutonCommunication.classList.remove("Bouton-disapear");
+    BoutonMarketing.classList.remove("Bouton-disapear");
+});
+
 
 
 
@@ -79,6 +96,21 @@ VariableElements.addEventListener("click",function(){
 //page donnation 
 
 BoutonDonation.addEventListener("click",function(){
+    tabs.forEach(function(tab){
+        tab.classList.remove("Bouton-active");
+    });
+    BoutonDonation.classList.add("Bouton-active");
+
+    ContenuListe.forEach(function(contenu){
+        contenu.classList.remove("contenu-active");
+    });
+    donnation.classList.add("contenu-active");
+    BoutonCommunication.classList.add("Bouton-disapear");
+    BoutonMarketing.classList.add("Bouton-disapear");
+});
+
+
+BoutonDon2.addEventListener("click",function(){
     tabs.forEach(function(tab){
         tab.classList.remove("Bouton-active");
     });
