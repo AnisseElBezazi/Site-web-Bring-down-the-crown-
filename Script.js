@@ -14,6 +14,7 @@ let BoutonDonation=document.querySelector(".tab6");
 let donnation=document.querySelector(".contenu5");
 let BoutonDon2=document.querySelector(".Lien");
 let Communication=document.querySelector(".contenu6");
+let Rules=document.querySelector(".contenu7");
 //page principal
 logoboutton.addEventListener("click",function(){
     tabs.forEach(function(tab){
@@ -124,5 +125,16 @@ BoutonDon2.addEventListener("click",function(){
     BoutonMarketing.classList.add("Bouton-disapear");
 });
 
-
+variableGameplay.addEventListener("click",function(){
+    tabs.forEach(function(tab){
+        tab.classList.remove("Bouton-active");
+    });
+    variableGameplay.classList.add("Bouton-active");
+    ContenuListe.forEach(function(contenu){
+        contenu.classList.remove("contenu-active");
+    });
+    Rules.classList.add("contenu-active");
+    BoutonCommunication.classList.add("Bouton-disapear");
+    BoutonMarketing.classList.add("Bouton-disapear");
+});
 
